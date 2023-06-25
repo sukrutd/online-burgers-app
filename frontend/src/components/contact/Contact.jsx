@@ -4,7 +4,7 @@ import './styles.scss';
 
 const Contact = () => {
 	return (
-		<section className='contact'>
+		<main className='contact-us'>
 			<motion.form
 				initial={{ x: '-100vw', opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
@@ -26,11 +26,12 @@ const Contact = () => {
 					initial={{ x: '50%', y: '-100vh', opacity: 0 }}
 					animate={{ x: '50%', y: '-50%', opacity: 1 }}
 					transition={{ delay: 0.8 }}
+					className='image-wrapper'
 				>
 					<img src={burger} alt='Burger' />
 				</motion.div>
 			</motion.div>
-		</section>
+		</main>
 	);
 };
 

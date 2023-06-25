@@ -16,7 +16,7 @@ const motionOptions = {
 
 const Home = () => {
 	return (
-		<>
+		<main>
 			<section className='home'>
 				<div className='brand-name'>
 					<motion.h1 {...motionOptions}>Burgerwala</motion.h1>
@@ -36,7 +36,7 @@ const Home = () => {
 			</section>
 			<Founder />
 			<Menu />
-		</>
+		</main>
 	);
 };
 

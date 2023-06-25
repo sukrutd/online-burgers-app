@@ -1,11 +1,11 @@
 @use 'theme/colors' as *;
 
-.confirm-order {
+.order-confirmation {
 	width: 100%;
 	height: calc(100vh - 17rem);
 	background-color: $light-pink;
 
-	.confirmation-details {
+	section {
 		height: 100%;
 		max-width: 800px;
 		padding: 2rem;
@@ -61,8 +61,8 @@
 }
 
 @media screen and (max-width: 600px) {
-	.confirm-order {
-		.confirmation-details {
+	.order-confirmation {
+		section {
 			width: 100%;
 			padding: 1rem;
 

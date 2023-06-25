@@ -3,8 +3,8 @@ import './styles.scss';
 
 const Shipping = () => {
 	return (
-		<section className='shipping'>
-			<div className='shipping-details'>
+		<main className='shipping-details'>
+			<section>
 				<h2>Shipping Details</h2>
 				<form>
 					<div className='form-group'>
@@ -49,8 +49,8 @@ const Shipping = () => {
 					</div>
 					<button type='submit'>Confirm Order</button>
 				</form>
-			</div>
-		</section>
+			</section>
+		</main>
 	);
 };
 

@@ -11,8 +11,8 @@ const Cart = () => {
 	const decrement = () => {};
 
 	return (
-		<section className='cart'>
-			<div className='cart-container'>
+		<main className='cart'>
+			<section>
 				<CartItem
 					title='Cheese Burger'
 					image={burger1}
@@ -34,7 +34,7 @@ const Cart = () => {
 					increment={() => increment(3)}
 					decrement={() => decrement(3)}
 				/>
-				<section className='estimated-total'>
+				<div className='estimated-total'>
 					<div className='row'>
 						<h4>Sub Total</h4>
 						<p>₹{2000}</p>
@@ -54,9 +54,9 @@ const Cart = () => {
 					<Link to='/shipping' className='checkout'>
 						Checkout
 					</Link>
-				</section>
-			</div>
-		</section>
+				</div>
+			</section>
+		</main>
 	);
 };
 

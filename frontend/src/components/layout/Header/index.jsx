@@ -5,24 +5,26 @@ import './styles.scss';
 
 const Header = ({ isAuthenticated = false }) => {
 	return (
-		<nav>
-			<motion.div initial={{ x: '-100%' }} whileInView={{ x: 0 }} className='logo'>
-				<Link to='/'>
-					<IoFastFoodOutline />
-				</Link>
-			</motion.div>
-			<div className='nav-links'>
-				<Link to='/'>Home</Link>
-				<Link to='/contact'>Contact</Link>
-				<Link to='/about'>About</Link>
-				<Link to='/cart'>
-					<IoCart />
-				</Link>
-				<Link to={isAuthenticated ? '/me' : '/login'}>
-					{isAuthenticated ? <IoPerson /> : <IoLogIn />}
-				</Link>
-			</div>
-		</nav>
+		<header>
+			<nav>
+				<motion.div initial={{ x: '-100%' }} whileInView={{ x: 0 }} className='logo'>
+					<Link to='/'>
+						<IoFastFoodOutline />
+					</Link>
+				</motion.div>
+				<div className='nav-links'>
+					<Link to='/'>Home</Link>
+					<Link to='/contact'>Contact</Link>
+					<Link to='/about'>About</Link>
+					<Link to='/cart'>
+						<IoCart />
+					</Link>
+					<Link to={isAuthenticated ? '/me' : '/login'}>
+						{isAuthenticated ? <IoPerson /> : <IoLogIn />}
+					</Link>
+				</div>
+			</nav>
+		</header>
 	);
 };
 

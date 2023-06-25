@@ -1,6 +1,6 @@
 @use 'theme/colors' as *;
 
-nav {
+header nav {
 	height: 5rem;
 	padding: 2rem;
 	display: flex;
@@ -9,18 +9,19 @@ nav {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	background-color: white;
 
-	> div {
+	.logo,
+	.nav-links {
 		display: flex;
 		align-items: center;
+	}
 
-		&.logo {
-			color: $red;
-			font-size: 3rem;
-		}
+	.logo {
+		color: $red;
+		font-size: 3rem;
 	}
 
 	.nav-links {
-		> a {
+		a {
 			color: $dark;
 			margin: 0 2rem;
 			transition: color 0.3s;
@@ -29,7 +30,7 @@ nav {
 				color: $light-dark;
 			}
 
-			> svg {
+			svg {
 				color: $red;
 				transition: inherit;
 				font-size: 1.75rem;
@@ -43,14 +44,14 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-	nav {
+	header nav {
 		padding: 1rem;
 
 		.nav-links {
-			> a {
+			a {
 				margin: 0 0.5rem;
 
-				> svg {
+				svg {
 					font-size: 1.5rem;
 				}
 			}

@@ -2,8 +2,8 @@ import './styles.scss';
 
 const ConfirmOrder = () => {
 	return (
-		<section className='confirm-order'>
-			<div className='confirmation-details'>
+		<main className='order-confirmation'>
+			<section>
 				<h2>Confirm Order</h2>
 				<form>
 					<div className='form-group'>
@@ -16,8 +16,8 @@ const ConfirmOrder = () => {
 					</div>
 					<button type='submit'>Place Order</button>
 				</form>
-			</div>
-		</section>
+			</section>
+		</main>
 	);
 };
 

@@ -5,7 +5,7 @@
 	height: 100vh;
 	background-color: $light-pink;
 
-	.cart-container {
+	section {
 		width: 80%;
 		height: 100%;
 		background-color: white;
@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 600px) {
 	.cart {
-		.cart-container {
+		section {
 			width: 100%;
 
 			.cart-item {

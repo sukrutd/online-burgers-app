@@ -7,8 +7,8 @@ import './styles.scss';
 const Menu = () => {
 	return (
 		<section id='menu'>
-			<h2>MENU</h2>
-			<div className='cards-container'>
+			<h2>Menu</h2>
+			<div className='menu-cards'>
 				<MenuCard
 					itemNum={1}
 					title='Cheese Burger'

@@ -1,11 +1,11 @@
 @use 'theme/colors' as *;
 
-.shipping {
+.shipping-details {
 	width: 100%;
 	height: 100vh;
 	background-color: $light-pink;
 
-	.shipping-details {
+	section {
 		width: 80%;
 		height: 100%;
 		padding: 2rem;
@@ -72,8 +72,8 @@
 }
 
 @media screen and (max-width: 600px) {
-	.shipping {
-		.shipping-details {
+	.shipping-details {
+		section {
 			width: 100%;
 			padding: 1rem;
 

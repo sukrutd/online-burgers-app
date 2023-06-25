@@ -17,16 +17,16 @@
 		padding: 1rem;
 		margin: 0 auto;
 
-		> img {
+		img {
 			border-radius: 100%;
 		}
 
-		> h2 {
+		h2 {
 			font-size: 1.25rem;
 			margin: 1rem 0;
 		}
 
-		> p.remarks {
+		.remarks {
 			font-size: 1rem;
 			letter-spacing: 3px;
 			line-height: 1.5;
@@ -37,11 +37,11 @@
 @media screen and (max-width: 600px) {
 	.founder {
 		.founder-info {
-			> h2 {
+			h2 {
 				font-size: 1.25rem;
 			}
 
-			> p.remarks {
+			.remarks {
 				font-size: 0.8rem;
 			}
 		}
