@@ -12,10 +12,7 @@
 		margin: auto;
 		background-color: white;
 
-		h2 {
-			text-transform: uppercase;
-			font-size: 1.5rem;
-			margin: 1rem 0;
+		h3 {
 			text-align: center;
 		}
 
@@ -24,48 +21,23 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+		}
 
-			.form-group {
-				width: 70%;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				margin: 1rem 0;
+		.form-group {
+			width: 70%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 1rem 0;
 
-				label {
-					white-space: nowrap;
-					font-weight: bold;
-				}
-
-				input,
-				select {
-					width: 450px;
-					font-size: 1rem;
-					padding: 0.5rem 1rem;
-					border: 2px solid rgb(202, 202, 202);
-					border-radius: 5px;
-					outline: none;
-
-					&:focus {
-						border: 2px solid $dark-red;
-					}
-				}
+			label {
+				white-space: nowrap;
+				font-weight: bold;
 			}
 
-			button {
-				padding: 0.5rem 1rem;
-				margin: 1rem;
-				border: none;
-				border-radius: 5px;
-				outline: none;
-				font-size: 1rem;
-				background-color: $red;
-				color: white;
-				cursor: pointer;
-
-				&:hover {
-					background-color: $dark-red;
-				}
+			input,
+			select {
+				width: 450px;
 			}
 		}
 	}
@@ -77,29 +49,19 @@
 			width: 100%;
 			padding: 1rem;
 
-			h2 {
-				font-size: 1.25rem;
-			}
+			.form-group {
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				margin: 0.5rem 0;
 
-			form {
-				.form-group {
-					width: 100%;
-					flex-direction: column;
-					align-items: flex-start;
-					justify-content: center;
-					margin: 0.5rem 0;
-
-					label {
-						margin-bottom: 0.5rem;
-					}
-
-					input,
-					select {
-						width: 100%;
-					}
+				label {
+					margin-bottom: 0.5rem;
 				}
 
-				button {
+				input,
+				select {
 					width: 100%;
 				}
 			}

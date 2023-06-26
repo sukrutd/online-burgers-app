@@ -36,22 +36,22 @@ const Cart = () => {
 				/>
 				<div className='estimated-total'>
 					<div className='row'>
-						<h4>Sub Total</h4>
+						<h5>Sub Total</h5>
 						<p>₹{2000}</p>
 					</div>
 					<div className='row'>
-						<h4>Shipping</h4>
+						<h5>Shipping</h5>
 						<p>₹{200}</p>
 					</div>
 					<div className='row'>
-						<h4>Tax</h4>
+						<h5>Tax</h5>
 						<p>₹{2000 * 0.18}</p>
 					</div>
 					<div className='row'>
-						<h4>Total</h4>
+						<h5>Total</h5>
 						<p>₹{2000 + 2000 * 0.18 + 200}</p>
 					</div>
-					<Link to='/shipping' className='checkout'>
+					<Link to='/shipping' className='button primary checkout'>
 						Checkout
 					</Link>
 				</div>

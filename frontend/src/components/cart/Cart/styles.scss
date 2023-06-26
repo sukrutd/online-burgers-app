@@ -25,12 +25,6 @@
 				display: flex;
 				align-items: center;
 
-				h3 {
-					letter-spacing: 2px;
-					font-size: 1rem;
-					font-weight: 400;
-				}
-
 				img {
 					height: 50px;
 				}
@@ -41,16 +35,14 @@
 				align-items: center;
 
 				input {
-					width: 3rem;
+					width: 2.5rem;
 					height: 2rem;
-					padding: 0.5rem;
-					font-size: 1.15rem;
-					text-align: center;
+					padding: 0;
+					margin: 0;
 					border: none;
-					border-radius: 5px;
-					outline: none;
-					background-color: inherit;
 					color: $red;
+					background-color: inherit;
+					text-align: center;
 
 					&::-webkit-inner-spin-button,
 					&::-webkit-outer-spin-button {
@@ -62,14 +54,8 @@
 				button {
 					width: 30px;
 					height: 32px;
-					padding: 0.25rem;
-					font-size: 1.25rem;
-					line-height: 1;
 					background-color: $dark;
 					color: white;
-					border: none;
-					border-radius: 5px;
-					cursor: pointer;
 				}
 			}
 		}
@@ -82,21 +68,10 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				margin: 1rem 0;
 			}
 
 			a.checkout {
-				padding: 0.5rem 1rem;
-				margin: 1rem 0;
-				border: none;
-				border-radius: 5px;
 				float: right;
-				background-color: $red;
-				color: white;
-
-				&:hover {
-					background-color: $dark-red;
-				}
 			}
 		}
 	}
@@ -108,20 +83,11 @@
 			width: 100%;
 
 			.cart-item {
-				flex-direction: column;
-				align-items: center;
 				padding: 0.5rem;
 				margin: 1rem 0;
 
-				.description {
-					width: 100%;
-					justify-content: center;
-					text-align: center;
-					margin-bottom: 0.5rem;
-
-					img {
-						height: 40px;
-					}
+				.description img {
+					height: 32px;
 				}
 			}
 
@@ -130,8 +96,8 @@
 
 				a.checkout {
 					display: block;
-					float: none;
 					text-align: center;
+					float: none;
 				}
 			}
 		}

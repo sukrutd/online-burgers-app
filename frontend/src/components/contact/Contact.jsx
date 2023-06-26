@@ -10,11 +10,18 @@ const Contact = () => {
 				animate={{ x: 0, opacity: 1 }}
 				transition={{ delay: 0.3 }}
 			>
-				<h2>Contact Us</h2>
-				<input type='text' placeholder='Name' />
-				<input type='email' placeholder='Email' />
-				<textarea cols='30' rows='10' placeholder='Enter your message here.'></textarea>
-				<button type='submit'>Send</button>
+				<h3>Contact Us</h3>
+				<input type='text' placeholder='Name' className='primary' />
+				<input type='email' placeholder='Email' className='primary' />
+				<textarea
+					rows='15'
+					cols='30'
+					placeholder='Enter your message here.'
+					className='primary'
+				></textarea>
+				<button type='submit' className='button primary'>
+					Send
+				</button>
 			</motion.form>
 			<motion.div
 				initial={{ x: '100vw', opacity: 0 }}

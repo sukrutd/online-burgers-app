@@ -11,9 +11,11 @@ const MenuCard = ({ itemNum, title, price, imageSrc, clickHandler, delay = 0 }) 
 			<div className='card-title'>Item {itemNum}</div>
 			<div className='card-body'>
 				<img src={imageSrc} alt={itemNum} />
-				<h5>₹{price}</h5>
+				<h3>₹{price}</h3>
 				<p>{title}</p>
-				<button onClick={() => clickHandler(itemNum)}>Buy Now</button>
+				<button className='button primary' onClick={() => clickHandler(itemNum)}>
+					Buy Now
+				</button>
 			</div>
 		</motion.div>
 	);

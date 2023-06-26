@@ -5,19 +5,19 @@ const Shipping = () => {
 	return (
 		<main className='shipping-details'>
 			<section>
-				<h2>Shipping Details</h2>
+				<h3>Shipping Details</h3>
 				<form>
 					<div className='form-group'>
 						<label>Address</label>
-						<input type='text' placeholder='Enter Address' />
+						<input type='text' placeholder='Enter Address' className='primary' />
 					</div>
 					<div className='form-group'>
 						<label>City</label>
-						<input type='text' placeholder='Enter City' />
+						<input type='text' placeholder='Enter City' className='primary' />
 					</div>
 					<div className='form-group'>
 						<label>Country</label>
-						<select>
+						<select className='primary'>
 							<option value=''>Country</option>
 							{Country &&
 								Country.getAllCountries().map((country) => (
@@ -29,7 +29,7 @@ const Shipping = () => {
 					</div>
 					<div className='form-group'>
 						<label>State</label>
-						<select>
+						<select className='primary'>
 							<option value=''>State</option>
 							{State &&
 								State.getStatesOfCountry('IN').map((state) => (
@@ -41,13 +41,15 @@ const Shipping = () => {
 					</div>
 					<div className='form-group'>
 						<label>Pin Code</label>
-						<input type='text' placeholder='Enter Pin Code' />
+						<input type='text' placeholder='Enter Pin Code' className='primary' />
 					</div>
 					<div className='form-group'>
 						<label>Mobile Number</label>
-						<input type='text' placeholder='Enter Mobile Number' />
+						<input type='text' placeholder='Enter Mobile Number' className='primary' />
 					</div>
-					<button type='submit'>Confirm Order</button>
+					<button type='submit' className='button primary'>
+						Confirm Order
+					</button>
 				</form>
 			</section>
 		</main>

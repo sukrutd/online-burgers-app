@@ -21,12 +21,7 @@
 	}
 
 	.brand-name {
-		padding: 2rem;
-
-		h1 {
-			font-size: 3rem;
-			text-transform: uppercase;
-		}
+		padding: 0 2rem;
 
 		p {
 			font-size: 1.25rem;
@@ -35,19 +30,9 @@
 
 	.explore-menu {
 		display: block;
-		width: 10rem;
-		padding: 1rem;
-		margin: 1rem 2rem;
-		background-color: $red;
-		color: white;
 		text-align: center;
-		font-size: 1rem;
-		border: none;
-		border-radius: 5px;
-
-		&:hover {
-			background-color: $dark-red;
-		}
+		width: 10rem;
+		margin: 1rem 2rem;
 	}
 }
 
@@ -57,13 +42,8 @@
 		justify-content: flex-start;
 
 		.brand-name {
-			padding: 8rem 1rem 1rem;
+			padding: 8rem 0 0;
 			text-align: center;
-
-			h1 {
-				margin: 1rem 0;
-				font-size: 2rem;
-			}
 
 			p {
 				font-size: 1rem;

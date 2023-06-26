@@ -26,10 +26,10 @@ const Home = () => {
 				</div>
 				<motion.a
 					href='#menu'
-					className='explore-menu'
 					initial={{ y: '-100%', opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ delay: 0.5 }}
+					className='button primary explore-menu'
 				>
 					Explore Menu
 				</motion.a>

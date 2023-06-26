@@ -4,7 +4,7 @@ const ConfirmOrder = () => {
 	return (
 		<main className='order-confirmation'>
 			<section>
-				<h2>Confirm Order</h2>
+				<h3>Confirm Order</h3>
 				<form>
 					<div className='form-group'>
 						<label htmlFor='payment-cod'>Cash On Delivery</label>
@@ -14,7 +14,9 @@ const ConfirmOrder = () => {
 						<label htmlFor='payment-online'>Online</label>
 						<input type='radio' name='payment' id='payment-online' />
 					</div>
-					<button type='submit'>Place Order</button>
+					<button type='submit' className='button primary'>
+						Place Order
+					</button>
 				</form>
 			</section>
 		</main>

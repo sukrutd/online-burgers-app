@@ -11,7 +11,7 @@ const Founder = () => {
 				className='founder-info'
 			>
 				<img src={founderImage} alt='Founder' height={200} width={210} />
-				<h2>Sukrut Daphalapurkar</h2>
+				<h4>Sukrut Daphalapurkar</h4>
 				<p className='remarks'>
 					Hey everyone, I am the founder of Burgerwala. Our aim is to serve customers with
 					a wide range of delicious and hygienic burgers. <br />
